@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "react-scripts --openssl-legacy-provider build",
+    "build": "index.js --openssl-legacy-provider build",
     "test": "node index.js"
   },
   "author": "",
