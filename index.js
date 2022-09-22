@@ -9,7 +9,7 @@ app.use(cors())
 
 const db = "mongodb+srv://login:amitprajapati@cluster0.fijppff.mongodb.net/login?retryWrites=true&w=majority"
 
-
+const port = process.env.PORT || 8080
 // "mongodb://127.0.0.1/loginsetup"
 
 mongoose.connect(db, {
@@ -116,8 +116,9 @@ app.post("/register", async(req, res) => {
 
 })
 
-app.listen(8080, () => {
-    console.log("BE started at port 9002")
+
+app.listen(port, () => {
+    console.log("BE started at port "+port)
 })
 
 
